@@ -1,4 +1,42 @@
 {
   "name": "visualsearch",
-  "version": "0.5.1"
+  "version": "0.6.0",
+  "description": "A Rich Search Box for Real Data",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RecuencoJones/visualsearch"
+  },
+  "homepage": "http://documentcloud.github.io/visualsearch/",
+  "author": "Samuel Clay",
+  "contributors": [
+    "RecuencoJones"
+  ],
+  "license": "MIT",
+  "main": "dist/js/visualsearch.js",
+  "files": [
+    "dist",
+    "README",
+    "LICENSE",
+    "index.html",
+    "demo.html"
+  ],
+  "dependencies": {
+    "backbone": "1.3.3",
+    "jquery": "2.1.4",
+    "jquery-ui": "1.10.4",
+    "underscore": "1.8.3"
+  },
+  "devDependencies": {
+    "grunt": "1.0.1",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-concat": "1.0.1",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-jst": "1.0.0",
+    "grunt-contrib-uglify": "1.0.1",
+    "grunt-underscore-jst": "0.3.0"
+  },
+  "scripts": {
+    "build": "grunt build",
+    "clean": "grunt clean"
+  }
 }
