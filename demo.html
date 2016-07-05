@@ -120,9 +120,10 @@
       }
   </style>
 
-  <link rel="stylesheet" href="lib/css/reset.css" type="text/css" media="screen" charset="utf-8">
-  <link rel="stylesheet" href="lib/css/icons.css" type="text/css" media="screen" charset="utf-8">
-  <link rel="stylesheet" href="lib/css/workspace.css" type="text/css" media="screen" charset="utf-8">
+  <!--<link rel="stylesheet" href="lib/css/reset.css" type="text/css" media="screen" charset="utf-8">-->
+  <!--<link rel="stylesheet" href="lib/css/icons.css" type="text/css" media="screen" charset="utf-8">-->
+  <!--<link rel="stylesheet" href="lib/css/workspace.css" type="text/css" media="screen" charset="utf-8">-->
+  <link rel="stylesheet" href="dist/css/visualsearch.css">
 
   <script src="vendor/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
   <!-- <script src="vendor/backported/jquery-1.4.4.js" type="text/javascript" charset="utf-8"></script> -->
@@ -133,18 +134,19 @@
   <script src="vendor/jquery.ui.autocomplete.js" type="text/javascript" charset="utf-8"></script>
   <script src="vendor/underscore-1.5.2.js" type="text/javascript" charset="utf-8"></script>
   <script src="vendor/backbone-1.1.0.js" type="text/javascript" charset="utf-8"></script>
-  <script src="lib/js/visualsearch.js" type="text/javascript" charset="utf-8"></script>
-  <script src="lib/js/views/search_box.js" type="text/javascript" charset="utf-8"></script>
-  <script src="lib/js/views/search_facet.js" type="text/javascript" charset="utf-8"></script>
-  <script src="lib/js/views/search_input.js" type="text/javascript" charset="utf-8"></script>
-  <script src="lib/js/models/search_facets.js" type="text/javascript" charset="utf-8"></script>
-  <script src="lib/js/models/search_query.js" type="text/javascript" charset="utf-8"></script>
-  <script src="lib/js/utils/backbone_extensions.js" type="text/javascript" charset="utf-8"></script>
-  <script src="lib/js/utils/hotkeys.js" type="text/javascript" charset="utf-8"></script>
-  <script src="lib/js/utils/jquery_extensions.js" type="text/javascript" charset="utf-8"></script>
-  <script src="lib/js/utils/search_parser.js" type="text/javascript" charset="utf-8"></script>
-  <script src="lib/js/utils/inflector.js" type="text/javascript" charset="utf-8"></script>
-  <script src="lib/js/templates/templates.js" type="text/javascript" charset="utf-8"></script>
+  <!--<script src="lib/js/visualsearch.js" type="text/javascript" charset="utf-8"></script>-->
+  <!--<script src="lib/js/views/search_box.js" type="text/javascript" charset="utf-8"></script>-->
+  <!--<script src="lib/js/views/search_facet.js" type="text/javascript" charset="utf-8"></script>-->
+  <!--<script src="lib/js/views/search_input.js" type="text/javascript" charset="utf-8"></script>-->
+  <!--<script src="lib/js/models/search_facets.js" type="text/javascript" charset="utf-8"></script>-->
+  <!--<script src="lib/js/models/search_query.js" type="text/javascript" charset="utf-8"></script>-->
+  <!--<script src="lib/js/utils/backbone_extensions.js" type="text/javascript" charset="utf-8"></script>-->
+  <!--<script src="lib/js/utils/hotkeys.js" type="text/javascript" charset="utf-8"></script>-->
+  <!--<script src="lib/js/utils/jquery_extensions.js" type="text/javascript" charset="utf-8"></script>-->
+  <!--<script src="lib/js/utils/search_parser.js" type="text/javascript" charset="utf-8"></script>-->
+  <!--<script src="lib/js/utils/inflector.js" type="text/javascript" charset="utf-8"></script>-->
+  <!--<script src="lib/js/templates/templates.js" type="text/javascript" charset="utf-8"></script>-->
+  <script src="dist/js/visualsearch.js"></script>
 </head>
 <body>
 
@@ -252,7 +254,7 @@
                     'Portland',
                     'Chicago',
                     'Boston'
-                  ])
+                  ]);
                   break;
                 case 'U.S. State':
                   callback([
@@ -268,7 +270,7 @@
                     "Texas", "Utah", "Vermont", "Virginia", "Virgin Islands",
                     "Washington", "West Virginia", "Wisconsin", "Wyoming"
                   ]);
-                  break
+                  break;
                 case 'country':
                   callback([
                     "China", "India", "United States", "Indonesia", "Brazil",
@@ -394,7 +396,7 @@
                     'Portland',
                     'Chicago',
                     'Boston'
-                  ])
+                  ]);
                   break;
                 case 'state':
                   callback([
@@ -410,7 +412,7 @@
                     "Texas", "Utah", "Vermont", "Virginia", "Virgin Islands",
                     "Washington", "West Virginia", "Wisconsin", "Wyoming"
                   ]);
-                  break
+                  break;
                 case 'country':
                   callback([
                     "China", "India", "United States", "Indonesia", "Brazil",
