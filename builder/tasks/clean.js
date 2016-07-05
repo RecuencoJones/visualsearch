@@ -6,7 +6,6 @@ module.exports = function(grunt) {
       force: true
     },
     tmp: ['<%= source.tmp %>'],
-    dist: ['<%= source.dist %>']/*,
-    doc: ['<%= source.doc %>']*/
+    dist: ['<%= source.dist %>']
   });
 };
