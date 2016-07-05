@@ -3,8 +3,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build:js', [
     'copy:js',
     'jst',
-    'concat:js',
-    // 'uglify:js'
+    'concat:js'
   ]);
 
   grunt.registerTask('build:css', [

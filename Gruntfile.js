@@ -15,7 +15,6 @@ module.exports = function(grunt) {
   grunt.loadTasks('builder/tasks');
 
   grunt.registerTask('default', [
-    // 'lint',
     'build'
   ]);
 };
