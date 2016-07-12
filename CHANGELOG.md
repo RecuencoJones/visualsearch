@@ -1,3 +1,7 @@
+## 0.6.2
+
+- Added flag to disallow submit by enter key
+
 ## 0.6.1
 
 - Fixed scroll of autosugest list
