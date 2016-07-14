@@ -1,7 +1,22 @@
 .DS_Store
-bower_components
 .idea
+.project
+.sass-cache
+.settings
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.bak
+*.bck
+*.tmp
+*.orig
+*.sublime-*
 
 dist
 tmp
 node_modules
+bower_components
