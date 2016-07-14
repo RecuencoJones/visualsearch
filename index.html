@@ -116,6 +116,12 @@
     a.thirdparty-link {
       font-weight: bold;
     }
+    .ui-autocomplete.VS-interface.input-autocomplete-demo {
+      padding: .25em;
+    }
+    .ui-autocomplete.VS-interface.facet-autocomplete-demo {
+      font-weight: bold;
+    }
   </style>
 
   <link rel="stylesheet" href="dist/css/visualsearch.css" type="text/css" media="screen" charset="utf-8">
@@ -136,14 +142,14 @@
   <div class="container" id="VS">
 
     <h1>VisualSearch.js</h1>
-    
+
     <p class="attribution">
       <i>
-        Created by <a href="http://github.com/samuelclay">Samuel Clay</a>, 
+        Created by <a href="http://github.com/samuelclay">Samuel Clay</a>,
         <a href="http://twitter.com/samuelclay">@samuelclay</a>.
       </i>
     </p>
-    
+
     <p>
       <a href="http://github.com/documentcloud/visualsearch">VisualSearch.js</a>
       enhances ordinary search boxes with the ability to autocomplete
@@ -151,7 +157,7 @@
       completable values for any facet. You can retrieve the search query as a
       structured object, so you don't have to parse the query string yourself.
     </p>
-    
+
     <p>
       <a href="https://www.documentcloud.org/public/#search/group%3A%20dcloud%20chair%3A%20%22Christopher%20Dodd%22%20TARP">Here's an example of a search on DocumentCloud.org that uses facets.</a>
     </p>
@@ -166,7 +172,7 @@
     </p>
 
     <p>
-      <i>VisualSearch.js is an open-source component of <a href="http://documentcloud.org/">DocumentCloud</a>. 
+      <i>VisualSearch.js is an open-source component of <a href="http://documentcloud.org/">DocumentCloud</a>.
       <br />
       <a href="docs/visualsearch.html">The complete annotated source code</a>
       is also available.</i>
@@ -196,6 +202,10 @@
             'filter',
             'access'
           ],
+          className: {
+            inputAutocomplete: 'input-autocomplete-demo',
+            facetAutocomplete: 'facet-autocomplete-demo'
+          },
           callbacks  : {
             search : function(query, searchCollection) {
               var $query = $('#search_query');
@@ -482,13 +492,13 @@
       </li>
       <li class="javascript">Inspect the Visual Search box
         <pre><code>// Returns the unstructured search query
-visualSearch.searchBox.value() 
+visualSearch.searchBox.value()
 // "country: "South Africa" account: 5-samuel title: "Pentagon Papers""
 
 // Returns an array of Facet model instances
 visualSearch.searchQuery.facets()
-// [FacetModel&lt;country:"South Africa">, 
-//  FacetModel&lt;account:5-samuel>, 
+// [FacetModel&lt;country:"South Africa">,
+//  FacetModel&lt;account:5-samuel>,
 //  FacetModel&lt;title:"Pentagon Papers">]
 
 // Set the search query with raw text
@@ -502,7 +512,7 @@ visualSearch.searchBox.value("Country: US State: \"New York\" Key: Value")
 
     <p>
       <a href="http://github.com/hirokiosame/search.js" class="thirdparty-link">Search.js</a> <i>July 22nd, 2013</i><br />
-          A fork of VisualSearch.js that provides support for dynamic operators and HTML5 
+          A fork of VisualSearch.js that provides support for dynamic operators and HTML5
           input types (numbers and dates).
     </p>
 
@@ -511,8 +521,8 @@ visualSearch.searchBox.value("Country: US State: \"New York\" Key: Value")
 
     <p>
       <b class="header">0.5.0</b> <i>February 9th, 2014</i><br />
-      Add <tt>readOnly: true</tt> to your options to create a read-only search box. 
-      Also upgraded all vendorized dependencies to latest versions (jQuery 1.11.0, 
+      Add <tt>readOnly: true</tt> to your options to create a read-only search box.
+      Also upgraded all vendorized dependencies to latest versions (jQuery 1.11.0,
       jQuery UI 1.10.4, Backbone 1.1.0, Underscore 1.5.2). Also fixed a number of issues:
       <a href="https://github.com/documentcloud/visualsearch/compare/0.4.0...0.5.0">
           https://github.com/documentcloud/visualsearch/compare/0.4.0...0.5.0
@@ -532,7 +542,7 @@ visualSearch.searchBox.value("Country: US State: \"New York\" Key: Value")
       <b class="header">0.3.0</b> <i>September 20th, 2012</i><br />
       Add <tt>showFacets: true</tt> to your options to have all available facets
       automatically show up when the search text box is focused. You can also pass multiple
-      facet names to withoutCategory, like so: 
+      facet names to withoutCategory, like so:
       <tt>searchQuery.withoutCategory('country', 'account')</tt>.
     </p>
     <p>
@@ -552,10 +562,10 @@ visualSearch.searchBox.value("Country: US State: \"New York\" Key: Value")
       <b class="header">0.2.0</b> <i>August 10th, 2011</i><br />
       Multiple instances of VisualSearch on a single page. <tt>VS.init</tt> now returns
       a reference to the instance. The <tt>search</tt> callback now contains both the
-      serialized search query and a reference to the search query collection (as a 
-      <a href="http://documentcloud.github.com/backbone/#Collection">Backbone.Collection</a>), 
-      which can be used to manipulate each facet directly. See 
-      <a href="docs/search_query.html">the source code for search_query.js</a> for available 
+      serialized search query and a reference to the search query collection (as a
+      <a href="http://documentcloud.github.com/backbone/#Collection">Backbone.Collection</a>),
+      which can be used to manipulate each facet directly. See
+      <a href="docs/search_query.html">the source code for search_query.js</a> for available
       methods on the collection.
     </p>
     <p>
