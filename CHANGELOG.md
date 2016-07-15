@@ -1,3 +1,7 @@
+## 0.6.3
+
+- Added class to select autosuggest elements.
+
 ## 0.6.2
 
 - Added flag to disallow submit by enter key
