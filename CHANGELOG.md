@@ -1,3 +1,10 @@
+## 0.6.5
+
+- Added delete key for removing all facets.
+- Added formatFacets callback.
+- Prevented autosearch on facet completion.
+- Removed default select first suggestion.
+
 ## 0.6.4
 
 - Added class to select autosuggest elements.
