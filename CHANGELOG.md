@@ -1,3 +1,7 @@
+## 0.6.6
+
+- Prevented remove empty facets on search.
+
 ## 0.6.5
 
 - Added delete key for removing all facets.
