@@ -1,3 +1,7 @@
+## 0.6.6
+
+- Removed default select first suggestion.
+
 ## 0.6.5
 
 - Added delete key for removing all facets.
