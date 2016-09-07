@@ -1,6 +1,7 @@
 ## 0.6.7
 
 - Fixed bug with free text facets.
+- Fixed bug with placeholder with free text.
 
 ## 0.6.6
 
