@@ -1,3 +1,7 @@
+## 0.6.7
+
+- Fixed bug with free text facets.
+
 ## 0.6.6
 
 - Prevented remove empty facets on search.
