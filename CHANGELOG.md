@@ -1,3 +1,8 @@
+## 0.6.8
+
+- Added option .matchAny for facetMatches callback to search not only from beginning
+- Fixed IE crash on a huge amount of suggestion list
+
 ## 0.6.7
 
 - Fixed bug with free text facets.
